@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+int sum=0,i,number,rem,copy;
+printf("enter the number:");
+scanf("%d",&number);
+copy=number;
+while(number!=0)
+{
+rem=rem%10;
+sum=sum+(rem*rem*rem);
+number=number/10;
+}
+if(copy==sum)
+{
+printf("\n%d is number is armstrong");
+else
+printf("\n%d is number is not armstrong number");
+}
+return(0);
+
